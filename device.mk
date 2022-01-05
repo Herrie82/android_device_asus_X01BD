@@ -65,7 +65,6 @@ PRODUCT_COPY_FILES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService \
     com.dsi.ant.antradio_library
 
 PRODUCT_COPY_FILES += \
@@ -135,8 +134,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    libxml2 \
-    Snap
+    libxml2
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -157,8 +155,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libhwc2on1adapter \
     liboverlay \
-    libqdMetaData \
-    libqdMetaData.system \
     libtinyxml \
     memtrack.sdm660 \
     libgenlock
@@ -180,7 +176,6 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
     libqcomfm_jni \
     qcom.fmradio \
     android.hardware.broadcastradio@1.0-impl
@@ -268,16 +263,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service \
-    com.android.nfc_extras \
-    NfcNci \
-    SecureElement \
-    Tag
-
+    com.android.nfc_extras 
+    
 # NFC-Secure Element
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0-service \
-    SecureElement
-
+    android.hardware.secure_element@1.0-service
+    
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -297,10 +288,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-
-# Nocutout
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
 
 # Health
 PRODUCT_PACKAGES += \
@@ -345,10 +332,6 @@ PRODUCT_PACKAGES += \
     qti-telephony-common \
     ims-ext-common \
     telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext \
-    WfdCommon
 
 # Seccomp
 PRODUCT_COPY_FILES += \
@@ -477,7 +460,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
     wpa_supplicant \
